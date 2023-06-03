@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://mobiusinferniummc.com/sitemap.xml
