@@ -4,6 +4,8 @@
 import * as React from 'react'
 import { MICard } from './components/Card'
 import { Grid } from '@mui/material'
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
 export default function Staff() {
 
@@ -22,75 +24,93 @@ export default function Staff() {
             <Grid item>
                 <MICard
                     title={<h1>Owners</h1>}
-                    sx={{ minWidth: 250 }}
+                    sx={{height: 600}}
                 >
-                    <h3>Owner</h3>
-                    <ul>
-                        <li>Sinless777#0420</li>
-                    </ul>
-                    <h3>Co-Owner</h3>
-                    <ul>
-                        <li>Setsu#5404</li>
-                    </ul>
+                    <Typography sx={{
+                        fontSize: 20
+                    }}>
+                        A Minecraft server owner or co-owner is responsible for managing the server, establishing rules, maintaining
+                        gameplay, resolving conflicts, and ensuring smooth performance, making them pivotal in creating an enjoyable
+                        gaming community.
+                    </Typography>
+                    <br/>
+                    <Box>
+                        <Typography component='h3' sx={{padding: 2, fontSize: 30}}>Owner</Typography>
+                        <Typography>Sinless777</Typography>
+
+                        <Typography component='h3' sx={{fontSize: 30, padding: 2}}>Co-Owner</Typography>
+                        <Typography>Setsu</Typography>
+                    </Box>
                 </MICard>
             </Grid>
             <Grid item>
-                <MICard
-                    title={<h1>Lead Staff</h1>}
-                    sx={{ minWidth: 250 }}
+                <MICard title={<h1>Lead Staff</h1>}
+                        sx={{height: 600}}
                 >
-                 <p>
+                    <Typography sx={{
+                        fontSize: 20,
+                    }}>
+                        The Lead Staff of a Minecraft server provides leadership and coordination for the server&apos;s administrative
+                        team. They oversee staff, enforce rules, and maintain a fair gaming environment while also making important
+                        decisions about server management and player issues.
+                    </Typography>
+                    <br/>
+                    <Box>
+                        <Typography component='h3' sx={{fontSize: 30}}>Admin</Typography>
+                        <Typography>Admin: </Typography>
 
-                 </p>
+                        <Typography component='h3' sx={{fontSize: 30}}>Developer</Typography>
+                        <Typography>Sinless777</Typography>
+
+                        <Typography component='h3' sx={{fontSize: 30}}>Moderator</Typography>
+                        <Typography></Typography>
+                    </Box>
                 </MICard>
             </Grid>
             <Grid item>
                 <MICard
                     title={<h1>Developers</h1>}
-                    sx={{ minWidth: 250 }}
+                    sx={{height: 600}}
                 >
-                    <ul>
-                        <li>Sinless777#0420</li>
-                        <li>Dope#7062</li>
-                        <li>RAFA#8662</li>
-                    </ul>
+                    <Typography sx={{fontSize: 20,}}>
+                        Minecraft server developers create and maintain custom plugins, features, and optimizations to enhance
+                        gameplay. They collaborate closely with server administrators to shape the server&apos;s unique experience
+                        and ensure its smooth operation.
+                    </Typography>
+                    <br/>
+                    <Box>
+                        <Typography>Sinless777</Typography>
+                    </Box>
                 </MICard>
             </Grid>
             <Grid item>
                 <MICard
                     title={<h1>Admins</h1>}
-                    sx={{ minWidth: 250 }}
+                    sx={{height: 600}}
                 >
-                    <ul>
-                        <li>Løst#9426</li>
-                    </ul>
+                    <Typography sx={{fontSize: 20,}}>
+                        Minecraft server admins enforce rules, resolve disputes, and monitor player behavior to maintain a positive
+                        gaming environment. They collaborate on server decisions and contribute to its overall success.
+                    </Typography>
+                    <br/>
+                    <Box>
+                        <Typography></Typography>
+                    </Box>
                 </MICard>
             </Grid>
             <Grid item>
                 <MICard
                     title={<h1>Moderators</h1>}
-                    sx={{ minWidth: 250 }}
+                    sx={{height: 600}}
                 >
-                    <p>
-
-                    </p>
-                </MICard>
-            </Grid>
-            <Grid item>
-                <MICard
-                    title={<h1>Junior Staff</h1>}
-                    sx={{ minWidth: 250 }}
-                >
-                    <h3>Developers</h3>
-                    <ul>
-                        <li>Løst#9426</li>
-                    </ul>
-                    <h3>Admins</h3>
-
-                    <h3>Moderators</h3>
-                    <ul>
-                        <li>darionuno#0723</li>
-                    </ul>
+                    <Typography sx={{fontSize: 20,}}>
+                        Minecraft server moderators enforce rules, maintain a positive atmosphere, and assist players. They monitor
+                        player behavior, address rule violations, and promote a friendly community environment.
+                    </Typography>
+                    <br/>
+                    <Box>
+                        <Typography></Typography>
+                    </Box>
                 </MICard>
             </Grid>
         </Grid>

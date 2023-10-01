@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import {
+    Box,
     Card,
     CardContent,
     CardHeader
@@ -24,9 +25,9 @@ export const MICard: React.FC<CardProps> = ({
         textAlign: 'center',
         border: '3px solid rgba(189, 155, 217, 0.7)',
         borderRadius: '50px',
-        fontSize: '1.5rem',
         minWidth: 150,
-        maxWidth: 500
+        maxWidth: 500,
+        maxHeight: 800,
     }
 
     const style = {
@@ -37,7 +38,14 @@ export const MICard: React.FC<CardProps> = ({
     return (
         <Card sx={style}>
             <CardHeader title={title} />
-            <CardContent>{children}</CardContent>
+            <CardContent>
+                <Box sx={{
+                    maxHeight:600,
+                    overflowY: 'auto',
+                }}>
+                    {children}
+                </Box>
+            </CardContent>
         </Card>
     )
 }
