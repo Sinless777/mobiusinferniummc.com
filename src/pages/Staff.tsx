@@ -10,10 +10,7 @@ import Box from "@mui/material/Box";
 export default function Staff() {
 
     return (
-        <Grid
-            container
-            spacing={4}
-            sx={{
+        <Grid container spacing={4} sx={{
                 flexGrow: 1,
                 paddingBottom: 15,
                 margin: 0,

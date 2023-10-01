@@ -40,7 +40,7 @@ export const MICard: React.FC<CardProps> = ({
             <CardHeader title={title} />
             <CardContent>
                 <Box sx={{
-                    maxHeight:600,
+                    maxHeight:575,
                     overflowY: 'auto',
                 }}>
                     {children}
