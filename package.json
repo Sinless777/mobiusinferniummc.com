@@ -4,12 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run format && npm run next:lint && npm run next:build",
+    "build": "npm run next:lint && npm run next:build",
     "next:build": "next build",
     "start": "next start",
-    "next:lint": "npm run lint && next lint",
-    "lint": "npx eslint --fix .",
-    "format": "pnpm exec prettier . --write "
+    "next:lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
