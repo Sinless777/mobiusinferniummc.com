@@ -1,5 +1,5 @@
 # DEPENDENCIES
-FROM node:20-alpine AS deps
+FROM node:21-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
@@ -7,7 +7,7 @@ COPY package.json package-lock.json ./
 RUN  npm install -omit=dev
 
 # BUILDER
-FROM node:20-alpine AS builder
+FROM node:21-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
@@ -17,7 +17,7 @@ ENV NEXT_TELEMETRY_DISABLED 1
 RUN npm run build
 
 # RUNNER
-FROM node:20-alpine AS runner
+FROM node:21-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV production
